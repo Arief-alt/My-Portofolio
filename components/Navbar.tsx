@@ -1,58 +1,50 @@
-import React from 'react'
+import { NavLink } from 'components';
+import React from 'react';
 
 const Navbar = () => {
     return (
         <nav className="w-full p-6 fixed glassmorphism">
-            <header className="w-full max-w-7xl mx-auto px-4 lg:px-8 justify-between flex">
-                <h1 className="items-center text-2xl">
+            <header className="wrapper justify-between flex">
+                <h1 className="font-bold items-center text-3xl portfolio-gradient-text">
                     Portfolio
                 </h1>
 
-                <div className="items-center flex gap-12">
-                    <a href="/" className="gap-2 items-center flex">
+                <div className="items-center gap-12 flex">
+                    <NavLink href="/">
                         <img
                             src="/assets/icons/home.png"
                             alt="home"
                             className="size-5"
                         />
+                        <h1 className="text-lg">Home</h1>
+                    </NavLink>
 
-                        <h1 className="text-lg">
-                            Home
-                        </h1>
-                    </a>
-                    <a href="/About" className="gap-2 items-center flex">
+                    <NavLink href="/About">
                         <img
                             src="/assets/icons/about.png"
-                            alt="home"
+                            alt="about"
                             className="size-4.5"
                         />
+                        <h1 className="text-lg">About</h1>
+                    </NavLink>
 
-                        <h1 className="text-lg">
-                            About
-                        </h1>
-                    </a>
-                    <a href="/Projects" className="gap-2 items-center flex">
+                    <NavLink href="/Projects">
                         <img
                             src="/assets/icons/projects.png"
-                            alt="home"
+                            alt="projects"
                             className="size-4.5"
                         />
+                        <h1 className="text-lg">Projects</h1>
+                    </NavLink>
 
-                        <h1 className="text-lg">
-                            Projects
-                        </h1>
-                    </a>
-                    <a href="/Contact" className="gap-2 items-center flex">
+                    <NavLink href="/Contact">
                         <img
                             src="/assets/icons/contact.png"
-                            alt="home"
+                            alt="contact"
                             className="size-4.5"
                         />
-
-                        <h1 className="text-lg">
-                            Contact
-                        </h1>
-                    </a>
+                        <h1 className="text-lg">Contact</h1>
+                    </NavLink>
                 </div>
             </header>
 
