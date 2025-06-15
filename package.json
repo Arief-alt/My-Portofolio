@@ -19,6 +19,7 @@
     "@syncfusion/ej2-react-maps": "^29.2.4",
     "@syncfusion/ej2-react-navigations": "^29.2.8",
     "@syncfusion/ej2-react-splitbuttons": "^29.2.4",
+    "@types/three": "^0.177.0",
     "appwrite": "^18.1.1",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
@@ -26,7 +27,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^7.5.3",
-    "tailwind-merge": "^3.3.0"
+    "tailwind-merge": "^3.3.0",
+    "three": "^0.177.0"
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.3",
