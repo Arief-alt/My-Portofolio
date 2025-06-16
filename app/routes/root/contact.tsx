@@ -16,7 +16,7 @@ const Contact = () => {
                 form.current,
                 process.env.REACT_APP_EMAILJS_PUBLIC_KEY!,
                 {
-                    to_name: "Arief Firmansyah" 
+                    to_name: "Arief Firmansyah"
                 }
             )
             .then(
@@ -57,7 +57,7 @@ const Contact = () => {
                                 <h1 className="font-bold text-md me-gradient-text">Full Name</h1>
                                 <input
                                     type="text"
-                                    name="name"
+                                    name="from_name"
                                     maxLength={30}
                                     placeholder="Your Name...."
                                     className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer"
