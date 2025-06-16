@@ -47,8 +47,6 @@ const Navbar = () => {
                     </NavLink>
                 </div>
             </header>
-
-
         </nav>
     )
 }

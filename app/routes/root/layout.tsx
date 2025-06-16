@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router';
-import {BouncingMouse, MobileNavbar, Navbar, SparkleCursor, ThreeDBackground} from 'components';
+import {MobileNavbar, Navbar, SparkleCursor, ThreeDBackground, UsePreventZoom} from 'components';
 
 const Layout = () => {
     return (
@@ -11,10 +11,6 @@ const Layout = () => {
 
             <SparkleCursor />
 
-            <div className="hidden lg:block">
-                <BouncingMouse />
-            </div>
-
             <div className="relative z-10 min-h-screen">
                 <div className="fixed top-0 left-0 w-full z-50">
                     <MobileNavbar />
@@ -24,7 +20,8 @@ const Layout = () => {
                     <Navbar />
                 </div>
 
-                <main className="px-4 pb-8">
+                <main className="pb-8 z-20">
+                    <UsePreventZoom />
                     <Outlet />
                 </main>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const BouncingMouse = () => {
     return (
-        <div className="fixed bottom-10 right-119 lg:right-1/2 flex justify-center">
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
             <img
                 src="/assets/icons/mouse.png"
                 alt="Scroll indicator mouse"

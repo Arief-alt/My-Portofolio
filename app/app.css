@@ -110,6 +110,10 @@ body {
     filter: brightness(0.85) contrast(1.05);
 }
 
+.bg-dark {
+    @apply inset-0 bg-black/30 z-0;
+}
+
 .three-bg {
     position: fixed;
     top: 0;
