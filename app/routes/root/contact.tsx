@@ -9,15 +9,18 @@ const Contact = () => {
 
         if (!form.current) return;
 
+        console.log('Using EmailJS config:', {
+            serviceID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            templateID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY?.substring(0, 5) + '...' // Show partial key
+        });
+
         emails
             .sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID!,
                 process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
                 form.current,
-                process.env.REACT_APP_EMAILJS_PUBLIC_KEY!,
-                {
-                    to_name: "Arief Firmansyah"
-                }
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY!
             )
             .then(
                 (result) => {
