@@ -4,3 +4,4 @@ export {default as Navbar} from './Navbar';
 export {default as NavLink} from './NavLink';
 export {default as SparkleCursor} from './SparkleCursor';
 export {default as MobileNavbar} from './MobileNavbar';
+export {default as BouncingMouse} from './BouncingMouse';

@@ -73,7 +73,6 @@ body {
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark Mode - Pure Gradient */
 .portfolio-background.dark-mode {
     background:
             linear-gradient(
@@ -93,7 +92,6 @@ body {
     filter: brightness(0.85) contrast(1.1);
 }
 
-/* Light Mode - Pure Gradient */
 .portfolio-background.light-mode {
     background:
             linear-gradient(
@@ -112,7 +110,6 @@ body {
     filter: brightness(0.85) contrast(1.05);
 }
 
-/* Three.js Container */
 .three-bg {
     position: fixed;
     top: 0;
@@ -121,7 +118,7 @@ body {
     height: 100%;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.7; /* Blend with your gradient */
+    opacity: 0.7;
 }
 
 .portfolio-gradient-text {
@@ -148,15 +145,9 @@ body {
     }
 }
 
-.nav-background-color {
+.button-background-color {
     background: linear-gradient(to bottom left, #A2C4FA 0%, #4F83D5 50%, #053583 100%);
     transition: all 0.5s ease;
-}
-
-.hover\:nav-background-color:hover {
-    background: linear-gradient(to bottom left, #A2C4FA 0%, #4F83D5 50%, #053583 100%);
-    background-size: 200% 200%;
-    animation: gradientSlide 3s ease infinite;
 }
 
 @keyframes gradientSlide {
@@ -165,6 +156,93 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+.introduction-gradient-text {
+    background: linear-gradient(to bottom right, #abdcff 0%, #0396ff 50%, #A2C4FA 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.profesional-gradient-text {
+    background: linear-gradient(to bottom right, #fa8bff 0%, #2bd2ff 50%, #2bff88 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.me-gradient-text {
+    background: linear-gradient(to bottom right, #b0b3b5 0%, #7d8082 50%, #b0b3b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.sleek-white {
+    @apply hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]
+}
+
+/*#Animation*/
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out both;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.mouse-icon.animate-bounce {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+.mouse-icon {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/*#Content*/
 .wrapper {
     @apply w-full max-w-7xl mx-auto px-4 lg:px-8 items-center;
 }

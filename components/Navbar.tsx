@@ -19,7 +19,7 @@ const Navbar = () => {
                         <h1 className="text-lg">Home</h1>
                     </NavLink>
 
-                    <NavLink href="/About">
+                    <NavLink href="/about">
                         <img
                             src="/assets/icons/about.png"
                             alt="about"
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <h1 className="text-lg">About</h1>
                     </NavLink>
 
-                    <NavLink href="/Projects">
+                    <NavLink href="/projects">
                         <img
                             src="/assets/icons/projects.png"
                             alt="projects"
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <h1 className="text-lg">Projects</h1>
                     </NavLink>
 
-                    <NavLink href="/Contact">
+                    <NavLink href="/contact">
                         <img
                             src="/assets/icons/contact.png"
                             alt="contact"
