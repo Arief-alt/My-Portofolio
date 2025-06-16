@@ -9,10 +9,10 @@ const Contact = () => {
 
         if (!form.current) return;
 
-        console.log('Using EmailJS config:', {
-            serviceID: process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            templateID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY?.substring(0, 5) + '...' // Show partial key
+        console.log({
+            service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            key: import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.substring(0, 3) + '...'
         });
 
         emails
