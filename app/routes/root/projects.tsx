@@ -34,10 +34,10 @@ const Projects = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">React</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">TailwindCSS</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">Appwrite</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">Stripe</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">React</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">TailwindCSS</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">Appwrite</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">Stripe</span>
                             </div>
 
                             <div className="flex gap-4">
@@ -99,9 +99,9 @@ const Projects = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">React</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">TailwindCSS</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">OpenWeatherAPI</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">React</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">TailwindCSS</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">OpenWeatherAPI</span>
                             </div>
 
                             <div className="flex gap-4">
@@ -154,8 +154,8 @@ const Projects = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-2">
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">React</span>
-                                <span className="text-white cursor-pointer px-2 py-1 rounded-full leanguange-background sleek-white transition-all duration-200">TailwindCSS</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">React</span>
+                                <span className="text-white cursor-pointer px-2 py-1 rounded-full media-background sleek-white transition-all duration-200">TailwindCSS</span>
                             </div>
 
                             <div className="flex gap-4">
