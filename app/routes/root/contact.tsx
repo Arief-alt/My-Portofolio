@@ -9,12 +9,6 @@ const Contact = () => {
 
         if (!form.current) return;
 
-        console.log({
-            service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-            template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            key: import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.substring(0, 3) + '...'
-        });
-
         emails
             .sendForm(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
