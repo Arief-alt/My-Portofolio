@@ -18,7 +18,7 @@ const Projects = () => {
                     Featured Projects
                 </h1>
 
-                <section>
+                <section className="justify-center items-center md:justify-start flex">
                     <div className="mt-4 max-w-sm rounded-lg overflow-hidden bg-dark border border-gray-400 bg-dark shadow-[0_0_0_2px_#3b82f6]">
                         <div className="hover:scale-105 w-full h-48 bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/travel-agency.png')" }}/>
 
@@ -79,12 +79,12 @@ const Projects = () => {
                 </section>
             </section>
 
-            <section className="pt-15 flex flex-col gap-2 fade-in-up">
+            <section className="pt-15 gap-2 fade-in-up">
                 <h1 className="font-bold text-3xl introduction-gradient-text">
                     Other Projects
                 </h1>
 
-                <section className="flex gap-8">
+                <section className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-8">
                     <div className="mt-4 max-w-sm rounded-lg overflow-hidden bg-dark border border-gray-400 bg-dark shadow-[0_0_0_2px_#3b82f6]">
                         <div className="hover:scale-105 w-full h-48 bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/weather-dashboard.png')" }}/>
 
@@ -209,11 +209,11 @@ const Projects = () => {
 
                     <Link
                         to="/contact"
-                        className="flex px-4 py-2 project-background text-white rounded-md items-center gap-2 sleek-white"
+                        className="flex px-4 py-2 project-background rounded-md items-center gap-2 sleek-white"
                     >
                         <img
-                            src="/assets/icons/link.png"
-                            alt="link"
+                            src="/assets/icons/airplane.png"
+                            alt="airplane"
                             className="size-5"
                         />
 

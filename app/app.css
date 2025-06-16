@@ -87,16 +87,30 @@ body {
     filter: brightness(0.85) contrast(1.1);
 }
 
-.leanguange-background {
+.sosial-media-background {
     position: relative;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     background:
             linear-gradient(
                     to top left,
-                    #d16ba5 0%,
+                    #004ff9 0%,
                     #86a8e7 50%,
-                    #5ffbf1 100%
+                    #fff94c 100%
+            );
+    filter: brightness(0.85) contrast(1.1);
+}
+
+.icon-background {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    background:
+            linear-gradient(
+                    to top left,
+                    #00c3ff 0%,
+                    #abffee 50%,
+                    #3d00a6 100%
             );
     filter: brightness(0.85) contrast(1.1);
 }
@@ -220,11 +234,25 @@ body {
     display: inline;
 }
 
+.available-gradient-text {
+    background: linear-gradient(to bottom right, #3cc5d7 0%, #a5f7c0 50%, #47d794 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
 .sleek-white {
     @apply hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]
 }
 
 /*#Animation*/
+@keyframes pulse {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
