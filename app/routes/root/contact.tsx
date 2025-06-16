@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emails from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -9,7 +9,7 @@ const Contact = () => {
 
         if (!form.current) return;
 
-        emailjs
+        emails
             .sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID!,
                 process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
@@ -108,7 +108,7 @@ const Contact = () => {
                         <section className="mt-10">
                             <button
                                 type="submit"
-                                className="w-full justify-center flex px-4 py-2 project-background rounded-md items-center gap-2 sleek-white"
+                                className="cursor-pointer w-full justify-center flex px-4 py-2 project-background rounded-md items-center gap-2 sleek-white"
                             >
                                 <img
                                     src="/assets/icons/airplane.png"
