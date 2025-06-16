@@ -39,7 +39,7 @@ const Home= () => {
                             to="/projects"
                             className="cursor-pointer flex justify-center items-center px-4 py-2 w-[240px] rounded-lg button-background-color sleek-white hover:scale-105 transition-all duration-200"
                         >
-                            <h1 className="text-lg">View My Work</h1>
+                            <h1 className="text-lg text-white">View My Work</h1>
                         </Link>
                     </div>
 
@@ -50,7 +50,11 @@ const Home= () => {
                             rel="noopener noreferrer"
                             className="cursor-pointer px-3 py-2 rounded-lg hover:bg-gray-800/80 sleek-white transition-all duration-200"
                         >
-                            <img src="/assets/icons/github.png" alt="github" className="size-8" />
+                            <img
+                                src="/assets/icons/github.png"
+                                alt="github"
+                                className="size-8"
+                            />
                         </a>
 
                         <a
@@ -59,14 +63,22 @@ const Home= () => {
                             rel="noopener noreferrer"
                             className="cursor-pointer px-3 py-2 rounded-lg hover:bg-blue-600/80 sleek-white transition-all duration-200"
                         >
-                            <img src="/assets/icons/linkedin.png" alt="linkedin" className="size-9" />
+                            <img
+                                src="/assets/icons/linkedin.png"
+                                alt="linkedin"
+                                className="size-9"
+                            />
                         </a>
 
                         <Link
                             to="/contact"
                             className="cursor-pointer px-3 py-2 rounded-lg hover:bg-indigo-500/80 sleek-white transition-all duration-200"
                         >
-                            <img src="/assets/icons/contact.png" alt="contact" className="size-8" />
+                            <img
+                                src="/assets/icons/contact.png"
+                                alt="contact"
+                                className="size-8"
+                            />
                         </Link>
                     </div>
                 </header>

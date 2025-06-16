@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router';
-import {MobileNavbar, Navbar, SparkleCursor, ThreeDBackground, UsePreventZoom} from 'components';
+import {MobileNavbar, Navbar, SparkleCursor, ThreeDBackground} from 'components';
 
 const Layout = () => {
     return (
@@ -21,7 +21,6 @@ const Layout = () => {
                 </div>
 
                 <main className="pb-8 z-20">
-                    <UsePreventZoom />
                     <Outlet />
                 </main>
             </div>

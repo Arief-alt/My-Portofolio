@@ -35,7 +35,7 @@ const About = () => {
 
     return (
         <main className="w-full pt-40 wrapper">
-            <header className="items-center flex flex-col gap-2 fade-in-up">
+            <header className="text-center items-center flex flex-col gap-2 fade-in-up">
                 <h1 className="font-bold text-4xl profesional-gradient-text">
                     About Me
                 </h1>
@@ -51,19 +51,25 @@ const About = () => {
                     </h1>
 
                     <div className="hover:scale-105 gap-3 mt-4 p-5 rounded-lg border border-gray-400 bg-dark shadow-[0_0_0_2px_#3b82f6]">
-                        <div className="space-y-3 text-gray-200">
+                        <div className="flex flex-col gap-3">
                             <p>
                                 <span className="font-semibold introduction-gradient-text">Arief Firmansyah</span>
                                 <span className="text-gray-400"> • 18 y/o • Aspiring Full-stack Dev</span>
                             </p>
 
-                            <p>🌱 <span className="italic">Currently:</span> Building foundations with
+                            <p>
+                                🌱 <span className="text-white italic">
+                                Currently:
+                                </span>
+                                <span className="text-white">
+                                    Building foundations with
+                                </span>
                                 <span className="font-mono ml-1 px-1.5 py-0.5 bg-blue-900/30 text-blue-300 rounded">
                                     React + TypeScript
                                 </span>
                             </p>
 
-                            <p>💡 <span className="italic">Fascinated by:</span>
+                            <p>💡 <span className="text-white italic">Fascinated by:</span>
                                 <span className="ml-1 px-2 py-0.5 bg-purple-900/20 text-purple-300 rounded-full text-sm">
                                     How frontend and backend communicate
                                 </span>
@@ -76,7 +82,7 @@ const About = () => {
                             </p>
 
                             <p className="pt-2">🚀 <span className="text-blue-400">Goal:</span>
-                                <span className="ml-1">To contribute meaningfully to open-source in 2025</span>
+                                <span className="ml-1 text-white">To contribute meaningfully to open-source in 2025</span>
                             </p>
                         </div>
                     </div>

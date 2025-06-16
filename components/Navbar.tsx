@@ -16,7 +16,7 @@ const Navbar = () => {
                             alt="home"
                             className="size-5"
                         />
-                        <h1 className="text-lg">Home</h1>
+                        <h1 className="text-white text-lg">Home</h1>
                     </NavLink>
 
                     <NavLink href="/about">
@@ -25,7 +25,7 @@ const Navbar = () => {
                             alt="about"
                             className="size-4.5"
                         />
-                        <h1 className="text-lg">About</h1>
+                        <h1 className="text-white text-lg">About</h1>
                     </NavLink>
 
                     <NavLink href="/projects">
@@ -34,7 +34,7 @@ const Navbar = () => {
                             alt="projects"
                             className="size-4.5"
                         />
-                        <h1 className="text-lg">Projects</h1>
+                        <h1 className="text-white text-lg">Projects</h1>
                     </NavLink>
 
                     <NavLink href="/contact">
@@ -43,7 +43,7 @@ const Navbar = () => {
                             alt="contact"
                             className="size-4.5"
                         />
-                        <h1 className="text-lg">Contact</h1>
+                        <h1 className="text-white text-lg">Contact</h1>
                     </NavLink>
                 </div>
             </header>
