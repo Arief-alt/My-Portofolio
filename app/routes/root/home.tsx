@@ -37,7 +37,7 @@ const Home= () => {
                     <div className="pt-6">
                         <Link
                             to="/projects"
-                            className="cursor-pointer flex justify-center items-center px-4 py-2 w-[240px] rounded-lg button-background-color sleek-white hover:scale-105 transition-all duration-200"
+                            className="cursor-pointer flex justify-center items-center px-4 py-2 w-[240px] rounded-lg project-background sleek-white hover:scale-105 transition-all duration-200"
                         >
                             <h1 className="text-lg text-white">View My Work</h1>
                         </Link>
