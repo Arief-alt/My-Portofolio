@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import emails from '@emailjs/browser';
+import {UsePreventZoom} from "../../../components";
 
 const Contact = () => {
     const form = useRef<HTMLFormElement>(null);
@@ -26,6 +27,8 @@ const Contact = () => {
                 }
             );
     };
+
+    UsePreventZoom()
 
     return (
         <main className="w-full pt-40 wrapper">

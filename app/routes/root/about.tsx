@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {UsePreventZoom} from "../../../components";
 
 const About = () => {
     const [progress, setProgress] = useState({
@@ -32,6 +33,8 @@ const About = () => {
 
         requestAnimationFrame(animate);
     }, []);
+
+    UsePreventZoom()
 
     return (
         <main className="w-full pt-40 wrapper">

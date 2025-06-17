@@ -1,7 +1,10 @@
 import React from 'react'
 import {Link} from "react-router";
+import {UsePreventZoom} from "../../../components";
 
 const Projects = () => {
+    UsePreventZoom()
+
     return (
         <main className="w-full pt-40 wrapper">
             <header className="text-center items-center flex flex-col gap-2 fade-in-up">

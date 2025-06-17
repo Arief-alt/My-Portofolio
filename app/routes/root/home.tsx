@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import {Link, NavLink} from "react-router";
+import {UsePreventZoom} from "../../../components";
 
 const Home= () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -9,6 +10,8 @@ const Home= () => {
             containerRef.current.style.opacity = '1';
         }
     }, []);
+
+    UsePreventZoom()
 
     return (
         <main

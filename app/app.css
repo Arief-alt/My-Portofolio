@@ -148,7 +148,7 @@ body {
                     rgba(26, 26, 46, 0.4),
                     transparent 70%
             );
-    /* filter: brightness(0.85) contrast(1.1); */
+     filter: brightness(0.85) contrast(1.1);
 }
 
 .portfolio-background.light-mode {
