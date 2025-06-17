@@ -1,16 +1,24 @@
 import React, { useEffect } from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation } from 'react-router'; // Import useLocation from react-router-dom
 import { MobileNavbar, Navbar, SparkleCursor, ThreeDBackground } from 'components';
 
 const Layout = () => {
+    const location = useLocation();
+
     useEffect(() => {
         document.documentElement.classList.remove('dark');
         document.documentElement.style.colorScheme = 'light';
         localStorage.setItem('theme', 'light');
-
         const toggleButton = document.querySelector('.theme-toggle');
         if (toggleButton) toggleButton.remove();
     }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+        document.documentElement.style.height = '';
+        document.body.style.height = '';
+    }, [location]);
 
     return (
         <div className="portfolio-background relative min-h-screen flex flex-col">
@@ -24,10 +32,10 @@ const Layout = () => {
                 <div className="fixed top-0 left-0 w-full z-40">
                     <MobileNavbar />
                 </div>
+
                 <div className="hidden lg:block w-full z-30">
                     <Navbar />
                 </div>
-
 
                 <main className="pb-8 z-20 flex-grow pt-[56px] lg:pt-[80px]">
                     <Outlet />
