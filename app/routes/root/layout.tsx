@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router'; // Import useLocation from react-router-dom
+import React, {useEffect, useRef} from 'react';
+import { Outlet, useLocation } from 'react-router';
 import { MobileNavbar, Navbar, SparkleCursor, ThreeDBackground } from 'components';
 
 const Layout = () => {
+    const mainRef = useRef<HTMLDivElement>(null);
     const location = useLocation();
 
     useEffect(() => {
@@ -18,6 +19,22 @@ const Layout = () => {
 
         document.documentElement.style.height = '';
         document.body.style.height = '';
+
+        const html = document.documentElement;
+        const body = document.body;
+
+        html.style.overflowY = 'hidden';
+        body.style.overflowY = 'hidden';
+
+        void html.offsetHeight;
+        void body.offsetHeight;
+
+
+        requestAnimationFrame(() => {
+            html.style.overflowY = '';
+            body.style.overflowY = '';
+        });
+
     }, [location]);
 
     return (
@@ -37,7 +54,7 @@ const Layout = () => {
                     <Navbar />
                 </div>
 
-                <main className="pb-8 z-20 flex-grow pt-[56px] lg:pt-[80px]">
+                <main ref={mainRef} className="pb-8 z-20 flex-grow pt-[56px] lg:pt-[80px]">
                     <Outlet />
                 </main>
             </div>
