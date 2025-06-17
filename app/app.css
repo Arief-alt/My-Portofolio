@@ -39,9 +39,17 @@
   --color-red-100: #ff543d;
 }
 
-html,
+html {
+    color-scheme: light !important;
+}
+
 body {
   @apply bg-gray-950 dark:bg-gray-950;
+
+    -webkit-filter: invert(0) hue-rotate(0deg) !important;
+    filter: invert(0) hue-rotate(0deg) !important;
+    background-color: #0a1128 !important;
+    color: #e0e0e0 !important;
 
     @media (prefers-color-scheme: dark) {
         :root {
@@ -140,13 +148,7 @@ body {
                     rgba(26, 26, 46, 0.4),
                     transparent 70%
             );
-    /* COMMENT THIS OUT OR REMOVE IT FOR TESTING */
     /* filter: brightness(0.85) contrast(1.1); */
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
-    color: inherit !important;
-    background-color: initial !important;
 }
 
 .portfolio-background.light-mode {
@@ -215,9 +217,6 @@ body {
     color: transparent;
     display: inline;
     animation: liquidWave 8s ease infinite;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 
@@ -227,9 +226,6 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 .profesional-gradient-text {
@@ -238,9 +234,6 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 .project-gradient-text {
@@ -249,9 +242,6 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 .me-gradient-text {
@@ -260,9 +250,6 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 .available-gradient-text {
@@ -271,9 +258,6 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
-
-    -webkit-filter: initial !important;
-    filter: initial !important;
 }
 
 .sleek-white {
