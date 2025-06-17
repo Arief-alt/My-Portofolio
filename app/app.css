@@ -125,7 +125,6 @@ body {
 }
 
 .portfolio-background {
-    /* ... existing properties ... */
     background:
             linear-gradient(
                     to top left,
@@ -183,15 +182,6 @@ body {
     opacity: 0.7;
 }
 
-.portfolio-gradient-text {
-    background: linear-gradient(to bottom right, #A2C4FA 0%, #4F83D5 50%, #053583 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline;
-    animation: liquidWave 8s ease infinite;
-}
-
 @keyframes liquidWave {
     0%, 100% {
         transform: translateY(0) rotate(0deg);
@@ -218,12 +208,28 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+.portfolio-gradient-text {
+    background: linear-gradient(to bottom right, #A2C4FA 0%, #4F83D5 50%, #053583 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    animation: liquidWave 8s ease infinite;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
+}
+
+
 .introduction-gradient-text {
     background: linear-gradient(to bottom right, #abdcff 0%, #0396ff 50%, #A2C4FA 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     display: inline;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
 }
 
 .profesional-gradient-text {
@@ -232,6 +238,9 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
 }
 
 .project-gradient-text {
@@ -240,6 +249,9 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
 }
 
 .me-gradient-text {
@@ -248,6 +260,9 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
 }
 
 .available-gradient-text {
@@ -256,6 +271,9 @@ body {
     background-clip: text;
     color: transparent;
     display: inline;
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
 }
 
 .sleek-white {
