@@ -125,10 +125,7 @@ body {
 }
 
 .portfolio-background {
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    /* ... existing properties ... */
     background:
             linear-gradient(
                     to top left,
@@ -144,7 +141,13 @@ body {
                     rgba(26, 26, 46, 0.4),
                     transparent 70%
             );
-    filter: brightness(0.85) contrast(1.1);
+    /* COMMENT THIS OUT OR REMOVE IT FOR TESTING */
+    /* filter: brightness(0.85) contrast(1.1); */
+
+    -webkit-filter: initial !important;
+    filter: initial !important;
+    color: inherit !important;
+    background-color: initial !important;
 }
 
 .portfolio-background.light-mode {
