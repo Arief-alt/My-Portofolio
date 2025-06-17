@@ -43,9 +43,11 @@ html,
 body {
   @apply bg-gray-950 dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            color-scheme: light !important;
+        }
+    }
 }
 
 .sparkle {
@@ -129,7 +131,7 @@ body {
     filter: brightness(0.85) contrast(1.1);
 }
 
-.portfolio-background.dark-mode {
+.portfolio-background {
     background:
             linear-gradient(
                     to top left,
