@@ -13,7 +13,7 @@ const MobileNavbar = () => {
     };
 
     return (
-        <div className="w-full p-6 fixed glassmorphism lg:hidden">
+        <div className="w-full px-1 py-6 fixed glassmorphism lg:hidden">
             <header className="wrapper justify-between flex">
                 <h1 className="font-bold items-center text-3xl portfolio-gradient-text">
                     Portfolio

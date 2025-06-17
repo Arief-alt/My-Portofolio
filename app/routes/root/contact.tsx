@@ -91,7 +91,7 @@ const Contact = () => {
                             <h1 className="font-bold text-md me-gradient-text">Message</h1>
                             <textarea
                                 name="message"
-                                placeholder="Add your description (Up to 1000 characters)..."
+                                placeholder="Add description (Up to 1000 characters)..."
                                 maxLength={1000}
                                 className="text-white w-full p-2 rounded-lg bg-black border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-100 cursor-pointer resize-none"
                                 rows={1}
