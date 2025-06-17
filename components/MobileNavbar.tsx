@@ -20,7 +20,7 @@ const MobileNavbar = () => {
                 </h1>
 
                 <button
-                    className="items-center lg:hidden rounded-md focus:outline-none"
+                    className="cursor-pointer items-center lg:hidden rounded-md focus:outline-none"
                     onClick={toggleMenu}
                 >
                     <img
@@ -40,14 +40,14 @@ const MobileNavbar = () => {
                  }}
             >
                 <div className="flex flex-col items-center gap-6 py-4 bg-white/10 backdrop-blur-lg rounded-lg">
-                    <NavLinks mobile closeMenu={closeMenu} reloadNav={true} />
+                    <NavLinks mobile closeMenu={closeMenu}/>
                 </div>
             </div>
         </div>
     );
 };
 
-const NavLinks = ({ mobile = false, closeMenu, reloadNav }: NavLinksProps) => { // Destructure reloadNav
+const NavLinks = ({ mobile = false, closeMenu }: NavLinksProps) => { // Destructure reloadNav
     const linkClass = mobile ? "px-6 w-full flex-col" : "";
 
     const handleLinkClick = () => {
@@ -59,25 +59,25 @@ const NavLinks = ({ mobile = false, closeMenu, reloadNav }: NavLinksProps) => { 
     return (
         <>
             <div className={linkClass} onClick={handleLinkClick}>
-                <NavLink href="/" reloadPage={reloadNav}>
+                <NavLink href="/">
                     <img src="/assets/icons/home.png" alt="home" className="size-5" />
                     <h1 className="text-lg">Home</h1>
                 </NavLink>
             </div>
             <div className={linkClass} onClick={handleLinkClick}>
-                <NavLink href="/about" reloadPage={reloadNav}>
+                <NavLink href="/about">
                     <img src="/assets/icons/about.png" alt="about" className="size-4.5" />
                     <h1 className="text-lg">About</h1>
                 </NavLink>
             </div>
             <div className={linkClass} onClick={handleLinkClick}>
-                <NavLink href="/projects" reloadPage={reloadNav}>
+                <NavLink href="/projects">
                     <img src="/assets/icons/projects.png" alt="projects" className="size-4.5" />
                     <h1 className="text-lg">Projects</h1>
                 </NavLink>
             </div>
             <div className={linkClass} onClick={handleLinkClick}>
-                <NavLink href="/contact" reloadPage={reloadNav}>
+                <NavLink href="/contact">
                     <img src="/assets/icons/contact.png" alt="contact" className="size-4.5" />
                     <h1 className="text-lg">Contact</h1>
                 </NavLink>

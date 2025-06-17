@@ -59,7 +59,7 @@ body {
 }
 
 .sparkle {
-    position: fixed;
+    position: absolute;
     width: 10px;
     height: 10px;
     background: radial-gradient(circle, #fff 20%, transparent 70%);
@@ -148,7 +148,8 @@ body {
                     rgba(26, 26, 46, 0.4),
                     transparent 70%
             );
-     filter: brightness(0.85) contrast(1.1);
+    background-size: cover;
+    filter: brightness(0.85) contrast(1.1);
 }
 
 .portfolio-background.light-mode {

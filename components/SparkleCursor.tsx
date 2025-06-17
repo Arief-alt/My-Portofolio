@@ -5,8 +5,8 @@ const SparkleCursor = () => {
         const handleMouseMove = (e: MouseEvent) => {
             const sparkle = document.createElement('div');
             sparkle.className = 'sparkle';
-            sparkle.style.left = `${e.clientX}px`;
-            sparkle.style.top = `${e.clientY}px`;
+            sparkle.style.left = `${e.pageX}px`;
+            sparkle.style.top = `${e.pageY}px`;
             document.body.appendChild(sparkle);
 
             setTimeout(() => {

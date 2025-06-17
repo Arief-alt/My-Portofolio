@@ -1,8 +1,21 @@
 import React, {useEffect} from 'react';
-import { Outlet } from 'react-router';
+import { Outlet, useLocation } from 'react-router';
 import { MobileNavbar, Navbar, SparkleCursor, ThreeDBackground } from 'components';
 
+const PersistentBackground = ({ children }) => {
+    return (
+        <>
+            <div className="fixed inset-0 z-0">
+                <ThreeDBackground />
+            </div>
+            {children}
+        </>
+    );
+};
+
 const Layout = () => {
+    const location = useLocation();
+
     useEffect(() => {
         document.documentElement.classList.remove('dark');
         document.documentElement.style.colorScheme = 'light';
@@ -12,26 +25,26 @@ const Layout = () => {
     }, []);
 
     return (
-        <div className="portfolio-background relative min-h-screen flex flex-col">
-            <div className="fixed inset-0 z-0">
-                <ThreeDBackground />
-            </div>
-
-            <SparkleCursor />
-
-            <div className="relative z-10 flex flex-col flex-grow">
-                <div className="fixed top-0 left-0 w-full z-40">
-                    <MobileNavbar />
+        <div className="bg-no-repeat bg-cover bg-center bg-fixed portfolio-background min-h-screen flex flex-col w-full">
+            <PersistentBackground key={location.pathname}>
+                <div className="fixed inset-0 z-1 pointer-events-none overflow-hidden">
+                    <SparkleCursor />
                 </div>
 
-                <div className="hidden lg:block w-full z-30">
-                    <Navbar />
-                </div>
+                <div className="relative z-10 flex flex-col flex-grow">
+                    <div className="fixed top-0 left-0 w-full z-40">
+                        <MobileNavbar />
+                    </div>
 
-                <main className="pb-8 z-20 flex-grow pt-[56px] lg:pt-[80px]">
-                    <Outlet />
-                </main>
-            </div>
+                    <div className="hidden lg:block w-full max-w-[270px] z-30">
+                        <Navbar />
+                    </div>
+
+                    <main className="w-full h-full pb-8 z-20">
+                        <Outlet />
+                    </main>
+                </div>
+            </PersistentBackground>
         </div>
     );
 };
