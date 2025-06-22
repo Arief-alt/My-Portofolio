@@ -1,24 +1,30 @@
-# Welcome to React Router!
+# My Portfolio
 
-A modern, production-ready template for building full-stack React applications using React Router.
+This is my personal portfolio website built with [Next.js](https://nextjs.org/) and deployed on [Vercel](https://vercel.com/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🔗 Live Site
+[https://arief-firmansyah-zero-five.vercel.app](https://arief-firmansyah-zero-five.vercel.app)
 
-## Features
+## 💡 Features
+- Built with React and Next.js
+- Responsive design for all screen sizes
+- Clean and minimal UI
+- Deployed via Vercel
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 🛠️ Tech Stack
+- Next.js
+- React.js
+- CSS Modules / Tailwind (if applicable)
+- Vercel
 
-## Getting Started
+## 📁 Project Structure
+- `pages/` — Routing and main pages
+- `components/` — Reusable UI components
 
-### Installation
+---
 
-Install the dependencies:
+### 🤝 Connect with Me
+- LinkedIn: [linkedin.com/in/arief-firmansyah-9451b62a2](https://www.linkedin.com/in/arief-firmansyah-9451b62a2/)
 
 ```bash
 npm install
