@@ -14,11 +14,11 @@ This is my personal portfolio website built with [Next.js](https://nextjs.org/) 
 ## 🛠️ Tech Stack
 - Next.js
 - React.js
-- CSS Modules / Tailwind (if applicable)
+- CSS Modules / Tailwind 
 - Vercel
 
 ## 📁 Project Structure
-- `pages/` — Routing and main pages
+- `app/` — Routing and main pages
 - `components/` — Reusable UI components
 
 ---
