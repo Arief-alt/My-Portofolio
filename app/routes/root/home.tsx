@@ -15,7 +15,7 @@ const Home= () => {
 
     return (
         <main
-            className="flex items-center justify-center pt-40 lg:pt-80 wrapper"
+            className="flex items-center justify-center pt-20 lg:pt-80 wrapper"
             ref={containerRef}
             style={{ opacity: 0, transition: 'opacity 0.5s ease-out' }}
         >

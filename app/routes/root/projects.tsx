@@ -6,7 +6,7 @@ const Projects = () => {
     UsePreventZoom()
 
     return (
-        <main className="w-full pt-40 wrapper">
+        <main className="w-full pt-20 wrapper">
             <header className="text-center items-center flex flex-col gap-2 fade-in-up">
                 <h1 className="font-bold text-4xl profesional-gradient-text">
                     My Projects

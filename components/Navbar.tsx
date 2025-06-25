@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav className="w-full p-6 fixed glassmorphism">
+        <nav className="hidden lg:block w-full p-6 sticky top-0 z-50 glassmorphism">
             <header className="wrapper justify-between flex">
                 <h1 className="font-bold items-center text-3xl portfolio-gradient-text">
                     Portfolio
